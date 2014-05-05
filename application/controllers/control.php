@@ -8,12 +8,6 @@ class Control extends MY_Controller{
 		$this->_request($server,'stopProcess',array($worker,1));
 		Redirect('/');
 	}
-	function Restart($server,$worker){
-		$this->_request($server,'startProcess',array($worker,1));
-        sleep(5);
-		$this->_request($server,'stopProcess',array($worker,1));
-		Redirect('/');
-	}
 	function Clear($server,$worker){
 		$this->_request($server,'clearProcessLogs',array($worker));
                 Redirect('/');

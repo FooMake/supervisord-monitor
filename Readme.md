@@ -12,10 +12,6 @@
 * Mute sound alerts (after some time auto resume)
 * Monitor process uptime status
 
-### This Fork added
-* Restart process
-* Restart a group of process
-
 ## Install
 
 1. Clone supervisord-monitor to your vhost/webroot:
