@@ -66,7 +66,7 @@ $muted = (isset($_COOKIE['mute'])?$_COOKIE['mute']:0);
 				<?php
 				$alert = false;
 				foreach($list as $name=>$procs){?>
-				<div class="span4">
+				<div class="span6">
 				<table class="table table-bordered table-condensed table-striped">
 					<tr><th colspan="4"><?php echo $name;?></th></tr>
 					<?php
@@ -105,7 +105,7 @@ $muted = (isset($_COOKIE['mute'])?$_COOKIE['mute']:0);
 							</td>
 							<td width="10"><span class="label label-<?php echo $class;?>"><?php echo $status;?></span></td>
 							<td width="80" style="text-align:right"><?php echo $uptime;?></td>
-							<td style="width:1%">
+							<td style="width:5%">
 								<!--div class="btn-group">
 									<button class="btn btn-mini">Action</button>
 									<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
@@ -118,6 +118,7 @@ $muted = (isset($_COOKIE['mute'])?$_COOKIE['mute']:0);
 								</div//-->
 								<?php if($status=='RUNNING'){ ?>
 								<a href="/control/stop/<?php echo $name.'/'.$item_name;?>" class="btn btn-mini btn-inverse" type="button"><i class="icon-stop icon-white"></i></a>
+								<a href="/control/restart/<?php echo $name.'/'.$item_name;?>" class="btn btn-mini btn-inverse" type="button"><i class="icon-stop icon-white"></i></a>
 								<?php } if($status=='STOPPED'){ ?>
 								<a href="/control/start/<?php echo $name.'/'.$item_name;?>" class="btn btn-mini btn-success" type="button"><i class="icon-play icon-white"></i></a>
 								<?php } ?>
