@@ -118,6 +118,7 @@ $muted = (isset($_COOKIE['mute'])?$_COOKIE['mute']:0);
 								</div//-->
 								<?php if($status=='RUNNING'){ ?>
 								<a href="index.php/control/stop/<?php echo $name.'/'.$item_name;?>" class="btn btn-mini btn-inverse" type="button"><i class="icon-stop icon-white"></i></a>
+								<a href="index.php/control/restart/<?php echo $name.'/'.$item_name;?>" class="btn btn-mini btn-primary" type="button"><i class="icon-stop icon-white"></i></a>
 								<?php } if($status=='STOPPED'){ ?>
 								<a href="index.php/control/start/<?php echo $name.'/'.$item_name;?>" class="btn btn-mini btn-success" type="button"><i class="icon-play icon-white"></i></a>
 								<?php } ?>
