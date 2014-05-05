@@ -1,0 +1,13 @@
+*.pyc
+*.orig
+*.BACKUP.*
+*.LOCAL.*
+*.REMOTE.*
+*.BASE.*
+*.swp
+.*.*.swo
+*.log
+.venv
+local*
+profile.html
+flower.db
