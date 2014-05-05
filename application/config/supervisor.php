@@ -2,17 +2,9 @@
 
 $config['supervisor_servers'] = array(
 	'server01' => array(
-		'url' => 'http://server01.app/RPC2',
-		'port' => '9001'
+		'url' => 'http://172.26.117.103/RPC2',
+		'port' => '9101'
 	),
-	'server02' => array(
-		'url' => 'http://server02.app/RPC2',
-                'port' => '9001'
-	),
-	'server03' => array(
-                'url' => 'http://server03.app/RPC2',
-                'port' => '9001'
-        ),
 );
 
 ?>

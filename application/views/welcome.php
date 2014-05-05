@@ -98,7 +98,7 @@ $muted = (isset($_COOKIE['mute'])?$_COOKIE['mute']:0);
 								echo $item_name;
 								if($check){
 									$alert = true;
-		echo '<span class="pull-right"><a href="/control/clear/'.$name.'/'.$item_name.'" id="'.$name.'_'.$item_name.'" onclick="return false" data-toggle="popover" data-message="'.htmlspecialchars($check).
+		echo '<span class="pull-right"><a href="index.php/control/clear/'.$name.'/'.$item_name.'" id="'.$name.'_'.$item_name.'" onclick="return false" data-toggle="popover" data-message="'.htmlspecialchars($check).
 			'" data-original-title="'.$item_name.'@'.$name.'" class="pop btn btn-mini btn-danger"><img src="/img/alert_icon.png" /></a></span>';
 								}
 								?>
@@ -117,9 +117,9 @@ $muted = (isset($_COOKIE['mute'])?$_COOKIE['mute']:0);
 									</ul>
 								</div//-->
 								<?php if($status=='RUNNING'){ ?>
-								<a href="/control/stop/<?php echo $name.'/'.$item_name;?>" class="btn btn-mini btn-inverse" type="button"><i class="icon-stop icon-white"></i></a>
+								<a href="index.php/control/stop/<?php echo $name.'/'.$item_name;?>" class="btn btn-mini btn-inverse" type="button"><i class="icon-stop icon-white"></i></a>
 								<?php } if($status=='STOPPED'){ ?>
-								<a href="/control/start/<?php echo $name.'/'.$item_name;?>" class="btn btn-mini btn-success" type="button"><i class="icon-play icon-white"></i></a>
+								<a href="index.php/control/start/<?php echo $name.'/'.$item_name;?>" class="btn btn-mini btn-success" type="button"><i class="icon-play icon-white"></i></a>
 								<?php } ?>
 							</td>
 						</tr>
