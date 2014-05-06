@@ -146,6 +146,7 @@ $muted = (isset($_COOKIE['mute'])?$_COOKIE['mute']:0);
                     <?php foreach($groups as $group){ ?>
                     <tr>
                         <td colspan=4>
+                            <span style="margin-right: 20px; font-weight:bold;">Group operation:</span>
                             <a href="index.php/control/stopgroup/<?php echo $name.'/'.$group;?>" class="btn btn-mini btn-inverse" type="button">
                                 <?php echo $group ?> <i class="icon icon-stop icon-white"></i>
                             </a>
